@@ -12,11 +12,11 @@ public class ExternalSort{
     public void externalSort(String inputFile, String outputFile, int n, int k){
     	int chunky_chunks = (int)Math.ceil(n/k);
     	int i = 0;
-    	String line = null; //maybe change this to null?
+    	String line = null; 
     	double[] chunks;
 
     	try{
-    		System.out.println("a"); //this is a test
+
     		FileReader fileReader = new FileReader(inputFile);
     		BufferedReader bufferReader = new BufferedReader(fileReader); //appends to buffer after input is read //CHECK THIS
     		for(i = 0; i < chunky_chunks; i++){
@@ -42,7 +42,7 @@ public class ExternalSort{
     					}
     				}
     			}
-    			//System.out.println("b");  //this is a test
+    			
     			sort(chunks);
 
     			try{
@@ -96,7 +96,7 @@ public class ExternalSort{
    		bufferReader.close();
 	   	}
 	   	catch (FileNotFoundException e){
-	   		//System.out.println("Error. Unable to open file.");
+	   		System.out.println("Error. Unable to open file.");
 	   	}
 	   	catch (IOException e){
 	   		System.out.println("Error. Unable to read file.");
@@ -201,7 +201,7 @@ public class ExternalSort{
    			}
 
    			catch (FileNotFoundException f){
-   				//System.out.println("Error. Unable to open file.");
+   				System.out.println("Error. Unable to open file.");
    			}
 
   			catch (IOException f){
