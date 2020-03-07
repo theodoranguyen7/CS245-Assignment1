@@ -111,18 +111,12 @@ public class HybridSort{
 		int subSize = 5;
 
 		if(right - left < subSize){
-			//System.out.println("Program will begin sorting using insertion sort.");
 			quadraticsort(arr, left, right);
-			//System.out.println(Arrays.toString(arr));
 		}
 
 		else{
-			//System.out.println("Program will begin sorting using quick sort.");
 			quicksort(arr, left, right);
-			//System.out.println(Arrays.toString(arr));
 		}
-
-		//System.out.println(Arrays.toString(arr));
 	}
 	/*END OF HYBRID SORT*/
 	
